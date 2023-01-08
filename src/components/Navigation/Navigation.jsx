@@ -12,7 +12,7 @@ export const Navigation = () => {
           {/* <svg xmlns={train} /> */}
         </div>
         <List>
-          <Nav to="/TrainMovie" end>
+          <Nav to="/" end>
             Home
           </Nav>
         </List>
