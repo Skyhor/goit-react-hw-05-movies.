@@ -1,6 +1,9 @@
+// import { FilmsApi } from 'services/FilmsApi';
+// import { useState, useEffect } from 'react';
+// import { Link, Outlet } from 'react-router-dom';
 import { FilmsApi } from 'services/FilmsApi';
-import { useState, useEffect } from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Outlet, Link } from 'react-router-dom';
 export const Home = () => {
   const [movies, setMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
