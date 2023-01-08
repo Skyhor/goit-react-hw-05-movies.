@@ -1,4 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
+// import { Home } from './pages/Home';
+// import { Layout } from './Layout/Layout';
+// import { FilmsSubPage } from './pages/FilmsSubPage';
 import { Home } from './pages/Home';
 import { Layout } from './Layout/Layout';
 import { FilmsSubPage } from './pages/FilmsSubPage';
@@ -8,9 +11,8 @@ export const App = () => {
   return (
     <Routes>
       <Route path="/TrainMovie" element={<Layout />}>
-        <Route path="/TrainMovie" element={<Home />}>
-          <Route path=":TrainMovieId" element={<FilmsSubPage />} />
-        </Route>
+        <Route path="/TrainMovie" element={<Home />}></Route>
+        <Route path="TrainMovieId" element={<FilmsSubPage />} />
       </Route>
     </Routes>
   );
