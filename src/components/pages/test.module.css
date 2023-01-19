@@ -1,0 +1,31 @@
+.active {
+  border: solid 3 px;
+  font-size: 2em;
+  font-family: Chalkduster, fantasy;
+  height: 1em;
+  margin-left: -15vw;
+  outline: solid #000000 0;
+  padding: 0.5em;
+  transition: all 2s ease-in;
+  width: 30vw;
+  z-index: 1;
+  position: relative;
+}
+.active:focus {
+  z-index: 3;
+  border: solid 3px #09f;
+  outline: solid #ffff00 2000px;
+}
+.nAc {
+  position: relative;
+  border: solid 3 px;
+  font-size: 2em;
+  font-family: Chalkduster, fantasy;
+  height: 1em;
+  margin-left: -15vw;
+  outline: solid #000000 0;
+  padding: 0.5em;
+  transition: all 2s ease-in;
+  width: 30vw;
+  z-index: 1;
+}

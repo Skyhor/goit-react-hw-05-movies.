@@ -1,17 +1,24 @@
 import { Routes, Route } from 'react-router-dom';
-import { Home } from './pages/Home';
+import { Home } from './pages/Home/Home';
 import { Layout } from './Layout/Layout';
 import { FilmsSubPage } from './pages/FilmsSubPage';
 import { SearchMovie } from './pages/SearchMovie';
+import { ActorWarehouse } from './pages/ActorWarehouse';
+// import { lazy } from 'react';
+import { Reviews } from './pages/Reviews';
+// const Reviews = lazy(() => import('./pages/Reviews'));
 // import { FilmsPage } from './pages/EventsPage';
 // import { FilmsSubPage } from './pages/FilmsSubPage';
 export const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/movies" element={<SearchMovie />} />
-        <Route path=":id" element={<FilmsSubPage />} />
+        <Route index element={<Home />} />
+        <Route path="movies" element={<SearchMovie />} />
+        <Route path="movies/:id" element={<FilmsSubPage />}>
+          <Route path=":cast" element={<ActorWarehouse />} />
+          <Route path="reviews" element={<Reviews />} />
+        </Route>
       </Route>
       {/* /products/:id */}
     </Routes>

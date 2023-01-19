@@ -12,12 +12,12 @@ export const Navigation = () => {
           {/* <svg xmlns={train} /> */}
         </div>
         <List>
-          <Nav to="/" end>
+          <Nav to={'/'} end>
             Home
           </Nav>
         </List>
         <List>
-          <Nav to="/movies">Movies</Nav>
+          <Nav to={'/movies'}>Search</Nav>
         </List>
       </Ul>
     </NavHead>
