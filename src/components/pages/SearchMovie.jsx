@@ -21,19 +21,16 @@ import {
   Overview,
 } from './SearchMovie.styled';
 
-export const SearchMovie = () => {
+const SearchMovie = () => {
   const [events, setEvents] = useState('');
   const [movie, setMovie] = useState('');
   const [totalPages, setTotalPages] = useState('');
   const [pages, setPages] = useState(1);
   const location = useLocation();
-  //   const [page, setPage] = useState(1);
-  //   const { page } = useParams();
-  //   console.log(page);
+
   const [searchParams, setSearchParams] = useSearchParams();
   const query = searchParams.get('query');
-  //   console.log(query);
-  //   const isComponentMounted = useComponentDidMount();
+
   useEffect(() => {
     if (query === null || query === '') {
       return;
@@ -130,3 +127,4 @@ export const SearchMovie = () => {
     </>
   );
 };
+export default SearchMovie;

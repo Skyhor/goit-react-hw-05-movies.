@@ -4,20 +4,11 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { Ul, Li } from './Actor.stuled';
 import plug from '../../images/plugactor.png';
-export const ActorWarehouse = () => {
-  //   const result = ActorWarehouseHook();
-  //   console.log(result);
+const ActorWarehouse = () => {
   const [name, setName] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const { id } = useParams();
-  //   ActorWarehouseApp(id)
-  //     .then(setName)
-  //     .catch(error => {
-  //       console.log(error.message);
-  //     })
-  //     .finally(() => {
-  //       setIsLoading(false);
-  //     });
+
   useEffect(() => {
     async function ApiActors() {
       setIsLoading(true);
@@ -56,3 +47,4 @@ export const ActorWarehouse = () => {
     )
   );
 };
+export default ActorWarehouse;

@@ -9,7 +9,7 @@ import { NameDiv } from './Home.styled';
 import { Description } from './Home.styled';
 import { Title } from './Home.styled';
 import { Overview } from './Home.styled';
-export const Home = () => {
+const Home = () => {
   const [movies, setMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
@@ -59,3 +59,4 @@ export const Home = () => {
     )
   );
 };
+export default Home;

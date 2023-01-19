@@ -1,14 +1,22 @@
 import { Routes, Route } from 'react-router-dom';
-import { Home } from './pages/Home/Home';
 import { Layout } from './Layout/Layout';
-import { FilmsSubPage } from './pages/FilmsSubPage';
-import { SearchMovie } from './pages/SearchMovie';
-import { ActorWarehouse } from './pages/ActorWarehouse';
+// import { Home } from './pages/Home/Home';
+// import { FilmsSubPage } from './pages/FilmsSubPage';
+// import { SearchMovie } from './pages/SearchMovie';
+// import { ActorWarehouse } from './pages/ActorWarehouse';
+import { lazy } from 'react';
 // import { lazy } from 'react';
-import { Reviews } from './pages/Reviews';
+// import { Reviews } from './pages/Reviews';
 // const Reviews = lazy(() => import('./pages/Reviews'));
 // import { FilmsPage } from './pages/EventsPage';
 // import { FilmsSubPage } from './pages/FilmsSubPage';
+
+const Home = lazy(() => import('./pages/Home/Home'));
+const FilmsSubPage = lazy(() => import('./pages/FilmsSubPage'));
+const SearchMovie = lazy(() => import('./pages/SearchMovie'));
+const ActorWarehouse = lazy(() => import('./pages/ActorWarehouse'));
+const Reviews = lazy(() => import('./pages/Reviews'));
+// const Home = lazy(() => import('pages/Home'));
 export const App = () => {
   return (
     <Routes>
