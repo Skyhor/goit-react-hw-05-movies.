@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/705.afb99957.chunk.css","mappings":"AAAA,6BACE,SACF,CACA,8BACE,WACF","sources":["components/pages/FilmsSubPage.module.css"],"sourcesContent":[".badVote {\n  color: red;\n}\n.goodVote {\n  color: green;\n}\n"],"names":[],"sourceRoot":""}
