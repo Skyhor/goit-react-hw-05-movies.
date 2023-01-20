@@ -21,7 +21,7 @@ import {
   Overview,
 } from './SearchMovie.styled';
 
-const SearchMovie = () => {
+export default function SearchMovie() {
   const [events, setEvents] = useState('');
   const [movie, setMovie] = useState('');
   const [totalPages, setTotalPages] = useState('');
@@ -126,5 +126,4 @@ const SearchMovie = () => {
       )}
     </>
   );
-};
-export default SearchMovie;
+}

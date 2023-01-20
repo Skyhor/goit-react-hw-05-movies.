@@ -9,7 +9,7 @@ import { BtnBack } from './FilmsSubPage.styled';
 import { ContLink } from './FilmsSubPage.styled';
 import plug from '../../images/plug.webp';
 
-const FilmsSubPage = () => {
+export default function FilmsSubPage() {
   const result = UseFetchEvents();
   const location = useLocation();
   const refLocation = useRef(location.state?.location);
@@ -56,5 +56,4 @@ const FilmsSubPage = () => {
       </>
     )
   );
-};
-export default FilmsSubPage;
+}
