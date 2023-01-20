@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { Ul, Li } from './Actor.stuled';
 import plug from '../../images/plugactor.png';
-export default function ActorWarehouse() {
+export const ActorWarehouse = () => {
   const [name, setName] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const { id } = useParams();
@@ -46,4 +46,4 @@ export default function ActorWarehouse() {
       </Ul>
     )
   );
-}
+};

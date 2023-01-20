@@ -2,7 +2,7 @@ import { ReviewsApp } from 'services/FilmsApi';
 import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useState } from 'react';
-export default function Reviews() {
+export const Reviews = () => {
   const { id } = useParams();
   const [reviews, setReviews] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -38,4 +38,4 @@ export default function Reviews() {
       </ul>
     )
   );
-}
+};
